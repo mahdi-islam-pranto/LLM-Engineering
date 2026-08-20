@@ -57,9 +57,6 @@
 - The magic box is demystified into **three training stages**: **pretraining → supervised fine-tuning (SFT) → reinforcement learning (RL)**.
 - ⭐ Key framing: the text you get back is **generated one token at a time** by a neural network — not retrieved from a database.
 
-> 📷 **IMAGE:** *The ChatGPT interface / "what happens when you hit enter" opening slide.*
-> `![ChatGPT overview](images/01-intro.png)`
-
 ---
 
 ## 2. Pretraining data: the internet
@@ -127,16 +124,11 @@
 
 *(~00:20)*
 
-- Inside is a **Transformer**: a big fixed mathematical function with billions of tunable **parameters (weights)**.
+- Inside is a **Transformer (giant mathematical expression)**: a big fixed mathematical function with billions of tunable **parameters (weights)**.
 - Inputs (tokens) flow through layers of matrix multiplications + attention; the parameters are the "knobs" adjusted during training.
 - ⭐ Important intuition: the network has **no memory of individual training documents**. Knowledge is *smeared* across billions of weights — a **lossy, probabilistic compression** of the training data.
 
 > 🧠 **Analogy:** think of the model's parameters as a **hazy, long-ago recollection**. It "kind of remembers" the internet the way you kind of remember a book you read years ago — not word-for-word.
-
-> 📷 **IMAGE:** *Transformer architecture / "the network is a function with knobs" visualization.*
-> `![Transformer internals](images/05-transformer.png)`
-
-❓ **Q5.** Why is it more accurate to call an LLM a "lossy compression" of the internet than a "search engine"?
 
 ---
 
@@ -149,7 +141,7 @@
 - ⭐ The model is a **token autocompleter**: it generates text that is *statistically consistent* with its training data, not necessarily *true*.
 
 > 📷 **IMAGE:** *Sampling loop diagram (distribution → pick token → append → repeat).*
-> `![Inference sampling](images/06-inference.png)`
+> ![1787224410023](image/Notebook/1787224410023.png)
 
 ---
 
